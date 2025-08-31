@@ -9,7 +9,7 @@ st.set_page_config(page_title="US Stock Commodity Analyst", layout="wide", initi
 
 st.sidebar.title("Menu Navigation")
 
-df = pd.read_parquet("Us_stock_commodity_analyst/CSV_US_Stock_Data_Cleaned.csv", engine="pyarrow")
+df = pd.read_parquet('US_Stock_Data_Cleaned.csv')
 
 norm_df = df.copy()
 
