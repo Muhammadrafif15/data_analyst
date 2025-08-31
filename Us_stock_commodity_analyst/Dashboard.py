@@ -10,8 +10,11 @@ st.set_page_config(page_title="US Stock Commodity Analyst", layout="wide", initi
 
 st.sidebar.title("Menu Navigation")
 
+# path untuk deploy
 file_path = os.path.join(os.path.dirname(__file__), "US_Stock_Data_Cleaned.csv")
 df = pd.read_parquet(file_path)
+
+# path untuk local
 # df = pd.read_parquet("US_Stock_Data_Cleaned.csv")
 
 norm_df = df.copy()
