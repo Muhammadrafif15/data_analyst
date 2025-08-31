@@ -3,13 +3,16 @@ import streamlit as st
 import plotly.express as px
 import plotly.graph_objects as go
 import numpy as np
+import os
 import calendar
 
 st.set_page_config(page_title="US Stock Commodity Analyst", layout="wide", initial_sidebar_state="expanded")
 
 st.sidebar.title("Menu Navigation")
 
-df = pd.read_parquet("US_Stock_Data_Cleaned.csv")
+file_path = os.path.join(os.path.dirname(__file__), "data", "US_Stock_Data_Cleaned.csv")
+df = pd.read_parquet(file_path)
+# df = pd.read_parquet("US_Stock_Data_Cleaned.csv")
 
 norm_df = df.copy()
 
