@@ -128,14 +128,9 @@ def create_data_overview_page(df):
     create_sample_data_structure(df)
     st.markdown("---")
     
-    # 1. Dataset Header
-    
-    
-    # 2. Data Structure Overview
     create_data_structure_overview(df)
     st.markdown("---")
     
-    # 4. Category Breakdown
     create_category_breakdown(df)
     st.markdown("---")
 
