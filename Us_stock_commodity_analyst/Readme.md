@@ -12,11 +12,10 @@ A data analysis project focusing on US stock markets and commodities, featuring 
 
 ## Project Structure
 
-- `data/` : Raw datasets and preprocessed data
-- `notebooks/` : Jupyter notebooks for exploration and analysis
-- `scripts/` : Python scripts for data processing
-- `reports/` : Analysis reports
-- `streamlit/` : Streamlit dashboard files
+- `Us_stock_commodity_analyst/US_stock_commodity.zip/` : Raw datasets and preprocessed data
+- `Us_stock_commodity_analyst/Notebook_Us_stock_and_commodity.ipynb/` : Jupyter notebooks for exploration and analysis
+- `Dashboard.py/` : Streamlit dashboard files
+- `utils/`: Page of dashboard
 
 ## Setup & Installation
 
@@ -36,6 +35,14 @@ pip install -r requirements.txt
 1. Navigate to the project directory:
 ```bash
 cd Us_stock_commodity_analyst
+```
+```
+# path untuk deploy
+file_path = os.path.join(os.path.dirname(__file__), "US_Stock_Data_Cleaned.csv")
+df = pd.read_parquet(file_path)
+
+# path untuk local
+# df = pd.read_parquet("US_Stock_Data_Cleaned.csv")
 ```
 
 2. Run the Streamlit app:
