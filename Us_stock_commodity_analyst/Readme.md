@@ -4,9 +4,10 @@ A data analysis project focusing on US stock markets and commodities, featuring 
 
 ## Features
 
-- Real-time stock and commodity data analysis
+- stock and commodity data analysis
 - Statistical analysis and data visualization
-- Machine learning price predictions
+- Optimize portofolio
+- Correlation Assets
 - Interactive Streamlit dashboard
 - Detailed documentation and code explanations
 
