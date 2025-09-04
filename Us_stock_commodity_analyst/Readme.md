@@ -20,13 +20,7 @@ A data analysis project focusing on US stock markets and commodities, featuring 
 
 ## Setup & Installation
 
-1. Clone the repository:
-```bash
-git clone https://github.com/yourusername/us_stock_commodity_analyst.git
-cd us_stock_commodity_analyst
-```
-
-2. Install dependencies:
+Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
