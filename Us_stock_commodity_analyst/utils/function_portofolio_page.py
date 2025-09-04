@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-
+import plotly.express as px
 
 def describe_portofolio (df):
     stats_columns = ['Asset', 'Return', 'Risk', 'Sharpe', 'VaR', 'MaxDD', 'Skew', 'Kurt', 'Beta', 'Alpha', 'Corr']
