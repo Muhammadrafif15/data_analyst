@@ -8,7 +8,8 @@ import calendar
 
 st.set_page_config(page_title="US Stock Commodity Analyst", layout="wide", initial_sidebar_state="expanded")
 
-st.sidebar.title("Menu Navigation")
+st.sidebar.title("US Stock & Commodity Analyst")
+st.sidebar.subheader("Menu Navigation")
 
 # path untuk deploy
 file_path = os.path.join(os.path.dirname(__file__), "US_Stock_Data_Cleaned.csv")

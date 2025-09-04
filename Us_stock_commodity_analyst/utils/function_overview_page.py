@@ -119,7 +119,7 @@ def create_sample_data_structure(df):
 def create_data_overview_page(df):
     """Main function to create complete data overview page"""
     
-    st.title("Data Overview & Information")
+    st.subheader("Data Overview & Information")
     st.markdown("Complete information about the dataset structure")
 
     create_dataset_header(df)
