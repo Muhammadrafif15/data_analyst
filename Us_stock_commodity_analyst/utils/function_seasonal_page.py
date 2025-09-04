@@ -191,6 +191,10 @@ def tap_year_seasonal(data ,year):
     yearly_seasonal_plot(data_tahun, year)
     st.markdown("---")
 
+    # Summary of the data_tahun, year
+    summary_year_seasonal(data_tahun)
+    st.markdown("---")
+
     # Monthly mean plot
     monthly_mean_seasonal_plot(data_tahun, year)
     st.markdown("---")
@@ -199,6 +203,3 @@ def tap_year_seasonal(data ,year):
     card_layout(data_tahun, year)
     st.markdown("---")
 
-    # Summary of the data_tahun, year
-    summary_year_seasonal(data_tahun)
-    st.markdown("---")
